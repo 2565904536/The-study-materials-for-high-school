@@ -1,2 +1,3 @@
-# learning-materials
-to store some learning materials in my high school career
+# 高中学习资料
+这个库是用来存放我利用寒假时间整理的资料的,也许对你有帮助.
+喜欢的话请点个星星.
