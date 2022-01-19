@@ -10,6 +10,7 @@
   + 点乘
   + 叉乘
   + 运算律
++ 向量的性质
 
 # 向量的表示方法
 
@@ -22,17 +23,17 @@
 ## 几何表示
 
 向量可以用有向线段来表示. 有向线段的长度表示向量的大小. 箭头所指的方向表示向量的方向.
-长度为0的向量叫做零向量. 记长度等于1个单位的向量叫做单位向量.
+长度为0的向量叫做零向量, 记作$\mathbf{0}$. 记长度等于1个单位的向量叫做单位向量.
 
 ## 坐标表示
 
->在平面直角坐标系中, 分别取与x轴, y轴方向相同的两个单位向量$\mathbf{i}$, $\mathbf{j}$作为一组基底. $\mathbf{a}$为平面直角坐标系内的任意向量, 以坐标原点O为起点P为终点作向量$\mathbf{a}$ . 由平面向量基本定理可知, 有且只有一对实数$(x, y)$, 使得$\mathbf{a} = x\mathbf{i} + y\mathbf{j}$，因此把实数对$(x, y)$叫做向量a的坐标，记作$\mathbf{a} = (x,y)$. 这就是向量$\mathbf{a}$的坐标表示. 其中$(x,y)$就是点P的坐标, 向量$\mathbf{a}$称为点P的位置向量.
+在平面直角坐标系中, 分别取与x轴, y轴方向相同的两个单位向量$\mathbf{i}$, $\mathbf{j}$作为一组基底.$\mathbf{a}$为平面直角坐标系内的任意向量, 以坐标原点O为起点, P为终点作向量$\mathbf{a}$.由平面向量基本定理可知, 有且只有一对实数$(x, y)$, 使得$\mathbf{a} = x\mathbf{i} + y\mathbf{j}$，因此把实数对$(x, y)$叫做向量$\mathbf{a}$的坐标，记作$\mathbf{a} = (x,y)$. 这就是向量$\mathbf{a}$的坐标表示. 其中$(x,y)$就是点P的坐标, 向量$\mathbf{a}$称为点P的位置向量.
 
 对于多维的空间向量, 可以通过类推得到, 这里不再阐述.
 
 # 向量的运算
 
-令$\mathbf{a} = (x_1, y_1, z_1)$, $\mathbf{b} = (x_2, y_2, z_2)$.
+令$\mathbf{a} = (x_1, y_1, z_1)$, $\mathbf{b} = (x_2, y_2, z_2)$, $\lambda, \mu为参数$, <$\mathbf{a}, \mathbf{b}$>为向量$\mathbf{a, b}$ 的夹角.
 
 ## 线性运算
 
@@ -47,10 +48,32 @@ $\lambda\mathbf{a} = \lambda(x_1, y_1, z_1) = (\lambda x_1, \lambda y_1, \lambda
 
 ## 点乘
 
-$\mathbf{a} \cdot \mathbf{b} = (x_1x_2, y_1y_2, z_1z_2)$
+$\mathbf{a} \cdot \mathbf{b} = x_1x_2 + y_1y_2 + z_1z_2$
+$\mathbf{a} \cdot \mathbf{b} = \mid\mathbf{a}\mid \cdot \mid\mathbf{b}\mid\cos$<$\mathbf{a}, \mathbf{b}$>
 
 ## 叉乘
 
 $\mathbf{a} \times \mathbf{b} = (y_1z_2 - z_1y_2, z_1x_2 - x_1z_2, x_1y_2-y_2x_1)$
+$\mid\mathbf{a} \times \mathbf{b}\mid = \mid\mathbf{a}\mid \cdot \mid\mathbf{b}\mid\sin$<$\mathbf{a}, \mathbf{b}$>
 
 ## 运算律
+
+交换律:
+$\mathbf{a} + \mathbf{b} = \mathbf{b} + \mathbf{a}$
+$\mathbf{a} - \mathbf{b} = -\mathbf{b} + \mathbf{a}$
+$\mathbf{a} \cdot \mathbf{b} = \mathbf{b} \cdot \mathbf{a}$
+$\mathbf{a} \times \mathbf{b} = -\mathbf{b} \times \mathbf{a}$
+结合律:
+$(\mathbf{a} + \mathbf{b}) + \mathbf{c} = \mathbf{a} + (\mathbf{b} + \mathbf{c})$
+$(\lambda\mathbf{a}) \cdot \mathbf{b} = \lambda(\mathbf{a} \cdot \mathbf{b})$
+$(\lambda\mathbf{a}) \times \mathbf{b} = \lambda(\mathbf{a} \times \mathbf{b})$
+分配律:
+$\lambda( \mathbf{a} + \mathbf{b}) = \lambda\mathbf{a} + \lambda\mathbf{b}$
+$(\lambda + \mu)\mathbf{a} = \lambda\mathbf{a} + \mu\mathbf{a}$
+$(\mathbf{a} + \mathbf{b}) \cdot \mathbf{c} = \mathbf{a} \cdot \mathbf{c} + \mathbf{b} \cdot \mathbf{c}$
+$\mathbf{a} \cdot (\mathbf{b} + \mathbf{c}) = \mathbf{a} \cdot \mathbf{b} + \mathbf{a} \cdot \mathbf{c}$
+$(\mathbf{a} + \mathbf{b}) \times \mathbf{c} = \mathbf{a}\times \mathbf{c} + \mathbf{b} \times \mathbf{c}$
+$\mathbf{a} \times (\mathbf{b} + \mathbf{c}) = \mathbf{a} \times \mathbf{b} + \mathbf{a} \times \mathbf{c}$
+
+# 向量的性质
+
