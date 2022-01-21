@@ -109,7 +109,7 @@ $\mathbf{a} \times (\mathbf{b} + \mathbf{c}) = \mathbf{a} \times \mathbf{b} + \m
 ![向量点乘](pictures/向量点乘.png "向量点乘")
 所以可以利用这一性质来计算两个向量的夹角:$$\cos <\mathbf{a}, \mathbf{b}> = \frac{\mathbf{a} \cdot \mathbf{b}}{\mid \mathbf{a} \mid \cdot \mid \mathbf{b} \mid}$$
 
-特别的, $\mathbf{a} \cdot \mathbf{b}= 0 \Leftrightarrow \mathbf{a} \perp \mathbf{b}$
+特别地, $$\mathbf{a} \cdot \mathbf{b}= 0 \Leftrightarrow \mathbf{a} \perp \mathbf{b}, \ \ \ \ \mathbf{a}, \mathbf{b} \neq \mathbf{0}$$
 
 #### 计算模长
 
@@ -128,6 +128,17 @@ $$\therefore\mid \mathbf{a} \mid = \sqrt{\mathbf{a} \cdot \mathbf{a}}$$
 
 #### 计算法向量
 
+设$\mathbf{n} = \mathbf{a} \times \mathbf{{b}}$, 很容易证明, $\begin{cases}
+\mathbf{n} \perp \mathbf{a}, \\ \mathbf{n} \perp \mathbf{b} \end{cases}$, 所以$\mathbf{n}$是$\mathbf{a}$和$\mathbf{b}$所构成的平面的法向量.
+
 #### 计算面积
 
+设$\triangle ABC$, 则$$S_{\triangle ABC} = \frac{1}{2}\mid \overrightarrow{AB} \times \overrightarrow{AC} \mid$$
+
 #### 计算体积
+
+设三棱锥$A-BCD$, 则$$V_{A-BCD} = \frac{1}{6}\overrightarrow{AB} \cdot (\overrightarrow{AC} \times \overrightarrow{AD})$$ 特别地, 若$V_{A-BCD} = 0$, 则$$A, B, C, D\text{四点共面}$$
+
+#### 证明平行
+
+$$\mathbf{a} \times \mathbf{b} = \mathbf{0} \Leftrightarrow \mathbf{a} /\mkern-4mu/ \mathbf{b}, \ \ \ \ \mathbf{a}, \mathbf{b} \neq \mathbf{0} $$
